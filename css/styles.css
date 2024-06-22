@@ -117,7 +117,7 @@ form label {
 }
 
 form input, form textarea, form button {
-    background-color: #adf391; /* Agregado punto y coma */
+    background-color: #adf391; 
     color: white;
     border: none;
     cursor: pointer;
@@ -140,4 +140,23 @@ form input, form textarea, form button {
     .artist img {
         margin: 0 0 10px;
     }
+}
+
+
+
+/*Estilos para diferentes épocas del año */
+
+/*Estilos de Navidad*/
+.navidad {
+    font-family: 'Christmas Font', cursive;
+}
+
+/*Estilos de Verano*/
+.verano {
+    font-family: 'Summer Font', sans-serif;
+}
+
+/*Estilos de Halloween*/
+.halloween {
+    font-family: 'Halloween Font', cursive;
 }
