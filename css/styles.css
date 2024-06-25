@@ -1,3 +1,7 @@
+/**/
+/* Estilos generales de la página*/
+/**/
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -143,20 +147,97 @@ form input, form textarea, form button {
 }
 
 
+/**/
+/*Estilos para las estaciones*/
+/**/
 
-/*Estilos para diferentes épocas del año */
-
-/*Estilos de Navidad*/
-.navidad {
-    font-family: 'Christmas Font', cursive;
+/* Primavera */
+.primavera {
+    font-family: 'Spring Font', sans-serif;
+    background-color: #e6ffe6;
 }
 
-/*Estilos de Verano*/
+/* Verano */
 .verano {
     font-family: 'Summer Font', sans-serif;
 }
 
-/*Estilos de Halloween*/
+/* Otoño */
+.otono {
+    font-family: 'Autumn Font', sans-serif;
+    background-color: #fff5e6;
+}
+
+/* Invierno */
+.invierno {
+    font-family: 'Winter Font', sans-serif;
+    background-color: #f0f8ff;
+}
+
+
+/**/
+/*Estilos para diferentes eventos*/
+/**/
+
+/* Halloween */
 .halloween {
     font-family: 'Halloween Font', cursive;
+}
+
+/* Inocentes */
+.inoccentes {
+    font-family: 'Inocentes Font', cursive;
+}
+
+
+/**/
+/*Animaciones*/
+/**/
+
+.animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    display: none; /* Inicialmente esta oculto */
+}
+
+.snowflake, .leaf, .petal, .sun {
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+
+/*Animación de los copos de nieve*/
+.snowflake {
+    background: url('../images/snowflake.png') no-repeat; /*IMPORTANTE: SUBIR ARCHIVOS A LA CARPETA INDICADA*/
+}
+
+/*Animación de las hojas*/
+.leaf {
+    background: url('../images/leaf.png') no-repeat; /*IMPORTANTE: SUBIR ARCHIVOS A LA CARPETA INDICADA*/
+}
+
+/*Animación de los petalos*/
+.petal {
+    background: url('../images/petal.png') no-repeat; /*IMPORTANTE: SUBIR ARCHIVOS A LA CARPETA INDICADA*/
+}
+
+/*Animación de los soles*/
+.sun {
+    background: url('../images/sun.png') no-repeat; /*IMPORTANTE: SUBIR ARCHIVOS A LA CARPETA INDICADA*/
 }
