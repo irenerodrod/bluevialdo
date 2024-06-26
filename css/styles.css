@@ -185,7 +185,7 @@ form input, form textarea, form button {
 }
 
 /* Inocentes */
-.inoccentes {
+.inocentes {
     font-family: 'Inocentes Font', cursive;
 }
 
@@ -240,4 +240,9 @@ form input, form textarea, form button {
 /*Animación de los soles*/
 .sun {
     background: url('../images/sun.png') no-repeat; /*IMPORTANTE: SUBIR ARCHIVOS A LA CARPETA INDICADA*/
+}
+
+/*Animacion de los fantasmas de halloween */
+.ghost {
+    background: url('../images/ghost.png') no-repeat; /*IMPORTANTE: SUBIR ARCHIVO A LA CARPETA INDICADA*/
 }
