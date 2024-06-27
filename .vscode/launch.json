@@ -1,33 +1,14 @@
-//versiones
-//0.2.0 - Inicial, sólo funciona con firefox
-//0.3.0 - Segunda versión, se han añadido chrome y edge
-
 {
-    "version": "0.3.0", 
-    "configurations": [
-        
-        {
-            "type": "firefox",
-            "request": "launch",
-            "name": "Launch Firefox against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        },
-        
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}",
-        },
-
-        {
-            "type": "edge",
-            "request": "launch",
-            "name": "Launch Edge against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}",
-        }
-    ]
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "firefox",
+			"request": "launch",
+			"name": "Launch Firefox against localhost",
+			"url": "http://localhost:8080",
+			"webRoot": "${workspaceFolder}",
+			"firefoxExecutable": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+			"preLaunchTask": "Run Server"
+		}
+	]
 }
