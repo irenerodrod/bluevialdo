@@ -11,7 +11,7 @@ Creación de la página web del sello discográfico Bluevialdo desde cero
 
 
 # Modificaciones pendientes de hacer
-- [ ] Personalización de la página dependiendo la estación (o evento). Por ejemplo; dependiendo de la estación, el día de los inocentes...
+- [x] Personalización de la página dependiendo la estación (o evento). Por ejemplo; dependiendo de la estación, el día de los inocentes...
 - [ ] Subir algunos archivos de imágenes para la personalización de la página
 - [ ] Crear una página para la tienda de la marca
 - [ ] Una página para cada artista, su información de contcato y sus obras recientes
