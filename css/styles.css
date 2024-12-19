@@ -1,12 +1,13 @@
 /* Estilos generales de la página */
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0 50px;
+    margin: 0;
     padding: 0;
     background-color: #adf391;
     line-height: 1.6;
 }
 
+/* Estilo para el encabezado */
 header {
     background-color: #000000;
     color: white;
@@ -95,6 +96,19 @@ nav ul li a {
 
 .hero .btn:hover {
     background-color: #8ccf6f;
+}
+
+/* Contenedor principal centrado */
+main {
+    max-width: 1200px; /* Establece un ancho máximo */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 60px 20px; /* Asegura que el contenido no toque los bordes */
+}
+
+/* Agregar espacio superior e inferior al main */
+main {
+    padding-top: 80px; /* Suficiente espacio para el header fijo */
+    padding-bottom: 80px; /* Suficiente espacio para el footer fijo */
 }
 
 /* Contenedor para secciones */
