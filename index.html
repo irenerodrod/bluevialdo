@@ -1,57 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bluevialdo</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Christmas+Font&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Summer+Font&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Halloween+Font&display=swap" rel="stylesheet">
-        <link rel="icon" href="images/logo.png" type="image/x-icon">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluevialdo</title>
 
-    <body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="artistas.html">Artistas</a> </li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Christmas+Font&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Summer+Font&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Halloween+Font&display=swap" rel="stylesheet">
 
-        <main>
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+</head>
 
-            <section class="hero">
-                <div class="hero-content">
-                    <h1>Descubre la mejor música</h1>
-                    <p>Explora las últimas canciones y artistas</p>
-                    <a href="artistas.html" class="btn">Ver Artistas</a>
-                </div>
-            </section>
+<body>
 
-        </main>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Bluevialdo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <footer>
+    <main>
 
-            <div class="social-media">
-                <a href="https://www.facebook.com/bluevialdo"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/bluevialdo"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/bluevialdo/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/bluevialdo"><i class="fab fa-youtube"></i></a>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>BLUEVIALDO</h1>
+                <p>Bienvenido al lugar en el que tus sueños se cumplen.</p>
             </div>
+        </section>
 
-            <p>&copy; 2024 - Bluevialdo. Todos los derechos reservados</p>
+        <!-- Sección Artistas -->
+        <section id="artistas">
+            <h2>Artistas</h2>
+            <p>En Bluevialdo trabajamos con artistas talentosos que están transformando el panorama musical. Conoce a nuestros artistas más destacados:</p>
+            <div class="artist">
+                <img src="images/artist1.png" alt="Artista 1">
+                <div>
+                    <h3>IRENUSKHA</h3>
+                    <p>Descripción breve del artista 1.</p>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="images/artist2.jpg" alt="Artista">
+                <div>
+                    <h3>Artista</h3>
+                    <p>Descripción</p>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="images/artist3.jpg" alt="Artista">
+                <div>
+                    <h3>Artista</h3>
+                    <p>Descripción</p>
+                </div>
+            </div>
+        </section>
 
-        </footer>
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si deseas obtener más información o contactar con nosotros, no dudes en llenar el siguiente formulario:</p>
+            <form action="enviar.php" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-        <script src="js/main.js"></script>
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
 
-    </body>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/bluevialdo" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/bluevialdo" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/bluevialdo/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/bluevialdo" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <p>&copy; 2024 - Bluevialdo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
