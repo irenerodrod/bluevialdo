@@ -100,7 +100,6 @@ nav ul li a {
 
 /* Contenedor principal centrado */
 main {
-    max-width: 1200px; /* Establece un ancho máximo */
     margin: 0 auto; /* Centra el contenido */
     padding: 60px 20px; /* Asegura que el contenido no toque los bordes */
 }
@@ -114,7 +113,7 @@ main {
 /* Contenedor para secciones */
 .section-container {
     padding: 40px 20px;
-    margin: 80px 0; /* espacio adicional para el header fijo */
+    
 }
 
 .section-title {
